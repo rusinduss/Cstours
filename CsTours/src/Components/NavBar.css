@@ -1,0 +1,42 @@
+.NavBar {
+    display: flex;
+    align-items: center;
+    background-color: #050404; /* Bootstrap blue */
+    padding: 15px 30px;
+    height: 70px; /* Set a fixed height */
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Stays at the top while navigating */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .NavBar-logo img {
+    height: 50px; /* Fixed size */
+    width: auto;
+  }
+  
+  .NavBar-links {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .NavBar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .NavBar-links a:hover {
+    color: #ffc107; /* Bootstrap yellow */
+  }
+  
+  body {
+    padding-top: 80px; /* Prevent content from hiding under the navbar */
+  }
+  

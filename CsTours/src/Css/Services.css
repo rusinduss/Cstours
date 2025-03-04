@@ -1,0 +1,35 @@
+
+.services-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  max-width: 100%;
+  margin: center;
+  padding: 0px;
+}
+
+/* The container that directly holds all the boxes */
+#services {
+  /* Lay out the boxes in a row, with some gap between them */
+  display: flex;
+  align-items: center;
+  background-color: rgb(216, 216, 230);
+  gap: 1rem;
+  margin: 10px;
+  padding: 20px;
+  /* Wrap boxes to a new line if the screen is too narrow */
+  flex-wrap: wrap;
+}
+
+/* Individual box styling */
+.service-Box {
+  background-color: #6b57d2;
+  border-style: double;
+  opacity: 70%;
+  border: 1px solid #bc1d1d;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 200px; /* Fixed width for consistent sizing */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

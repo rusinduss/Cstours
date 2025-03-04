@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+.full-box{
+    display: flex;
+    height: 80%;
+    width: 80%;
+}
+.Contactinfo-left,.Contactinfo-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactinfo-box{
+    margin-top: 30px;
+    display: flex;
+    border-style: dashed;
+    border-color: black;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+ 
+}
+.image{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+}
