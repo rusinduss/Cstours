@@ -13,7 +13,7 @@ function Home() {
     <div className='body'> 
       <NavBar/>
       <Carousel/>
-      <Services/>
+      <Services showCarousel={false}/>
       <AboutUs/>
       <Gallery/>
       <ContactUs/>

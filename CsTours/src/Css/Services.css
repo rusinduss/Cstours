@@ -1,35 +1,80 @@
+@import "../../src/Vars.css";
 
 .services-container {
+  width:100%;
+  height: 100%;
+  min-height: 100vh;
+  background: var(--color-dark);
   display: flex;
+  flex-direction: column;
   justify-content: center;  
   align-items: center;
   max-width: 100%;
-  margin: center;
+  /* margin: center;  */
   padding: 0px;
+  color: var(--color-text); 
+  
 }
 
 /* The container that directly holds all the boxes */
 #services {
   /* Lay out the boxes in a row, with some gap between them */
   display: flex;
+  flex: 1;
   align-items: center;
-  background-color: rgb(216, 216, 230);
+  background: linear-gradient(180deg,#576cbc 0%,#132a53 100%);
   gap: 1rem;
-  margin: 10px;
+  margin-top: 40px;
+  margin-left: 10%;
   padding: 20px;
+  overflow:hidden;
   /* Wrap boxes to a new line if the screen is too narrow */
   flex-wrap: wrap;
 }
 
 /* Individual box styling */
 .service-Box {
-  background-color: #6b57d2;
+  background:var(--color-dark);
   border-style: double;
   opacity: 70%;
-  border: 1px solid #bc1d1d;
+  overflow:hidden;
+  border: 1px solid;
   border-radius: 6px;
   padding: 1rem;
-  width: 200px; /* Fixed width for consistent sizing */
+  width: 200px; /* Fixed width for consistent sizing*/
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ .carousel-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  
+  
+}
+
+@media screen and (max-width:830px) {
+  .services-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  #services{
+    margin: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .carousel-container{
+    margin-top: auto;
+    display: flex;
+    width: 50%;
+    height: 50%;
+  }
+  
 }

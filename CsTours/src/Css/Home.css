@@ -1,6 +1,7 @@
+@import "../../src/Vars.css";
 .body{
-    /* background-image:url(../assets/kandy-dalada-perahera.jpg); */
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* background-color: beige; */
-
+    background-color: var(--color-bg) ;
+    color: var(--color-text);
+    overflow: hidden;
+    width: 100%;
 }

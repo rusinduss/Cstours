@@ -1,5 +1,5 @@
 
-import './App.css'
+// import './App.css'
 import Home from './Pages/Home'
 
 
@@ -7,7 +7,7 @@ function App() {
   
 
   return (
-    <div className='body'>
+    <div className='App'>
     
     <Home/>
  
@@ -17,4 +17,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

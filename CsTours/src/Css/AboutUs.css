@@ -1,3 +1,15 @@
+@import "../../src/Vars.css";
+.Aboutus-container{
+    background-color: var(--color-bg) ;
+    color: var(--color-text);
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+
+
+
 h3{
     text-align: center;
 }

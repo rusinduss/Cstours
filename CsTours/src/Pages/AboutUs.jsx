@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-unused-vars
+
 import React from 'react'
 import NavBar from '../Components/NavBar'
 import '../Css/AboutUs.css'

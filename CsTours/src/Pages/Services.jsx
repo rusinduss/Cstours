@@ -3,11 +3,11 @@ import "../Css/Services.css";
 import NavBar from "../Components/NavBar";
 import Home from "./Home";
 import Carousel from "../Carousel";
+import VehicleCarousel from "../VehicleCarousel";
 
 
-function Services() {
+function Services({showCarousel= true}) {
   return (
-    
     <div className="services-container">
         <NavBar/>
       <div id="services">
@@ -20,9 +20,13 @@ function Services() {
         <div className='service-Box'>
           <p>Tour Operators and Guides</p>
         </div>
+        
         <div className='service-Box'>
           <p>Tours and Holiday Packages</p>
         </div>
+      </div>
+      <div className="carousel-container">
+      {showCarousel && <VehicleCarousel/>}
       </div>
     </div>
   );

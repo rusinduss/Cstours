@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import "./form.css"
 import  CsToursLogo from '../assets/CsToursLogo.jpeg'
 import Calendar from "react-calendar";
+import DatePicker from "react-date-picker"
+import "react-date-picker/dist/DatePicker.css";
 
-function form() {
+function Form() {
     const[fromdate,setFromDate]=useState(new Date());
     const[todate,setToDate]=useState(new Date());
     const[name,setName]=useState("");
@@ -44,9 +46,9 @@ const handlesubmit=(e)=>{
                     <input placeholder='country' onChange={(e)=>setCountry(e.target.value)} type='text' name='country'/><br/>
                 <label>Date </label><br/>
                 <label>From</label>
-                <Calendar onChange={(e)=>setFromDate(e.target.value)} value={fromdate}/><br/>
+                <DatePicker onChange={setFromDate} value={fromdate}/><br/>
                 <label>To</label>
-                <Calendar onChange={(e)=>setToDate(e.target.value)} value={todate}/><br/>
+                <DatePicker onChange={(e)=>setToDate(e.target.value)} value={todate}/><br/>
                 <label>Whatsapp Number</label>
                     <input placeholder='Whatsapp number' onChange={(e)=>setNumber(e.target.value)} type='text' name='Whatsapp number'/><br/>
                  <label>How many persons</label>
@@ -66,4 +68,4 @@ const handlesubmit=(e)=>{
   )
 }
 
-export default form;
+export default Form;

@@ -7,12 +7,12 @@ import Form from "../Forms/form";
 
 function ContactUs() {
   return (
-    <div>
+    <div className="contact-container">
       <div>
         <NavBar />
       </div>
       <div className="chat-Box">
-        <Link to="https://api.whatsapp.com/send/?phone=94712943454&text&type=phone_number&app_absent=0">
+        <Link className="chat-Box-Link" to="https://api.whatsapp.com/send/?phone=94712943454&text&type=phone_number&app_absent=0">
           Chat with Us
         </Link>
       </div>
